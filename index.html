@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aetherion</title>
+
+  <!-- Fantasy Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <h1>Entering Aetherion...</h1>
+  </div>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <h1>Aetherion</h1>
+    <nav>
+      <button class="nav-btn" id="openMap">Map</button>
+      <button class="nav-btn" id="openLore">Lore</button>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Biomes</h2>
+      <button class="biome-btn">Crystal Forest</button>
+      <button class="biome-btn">Ashen Desert</button>
+      <button class="biome-btn">Floating Isles</button>
+      <button class="biome-btn">Frost Peaks</button>
+    </aside>
+
+    <!-- 3D World Placeholder -->
+    <main class="world-area">
+      <div class="world-placeholder">
+        3D World Will Render Here
+      </div>
+    </main>
+
+    <!-- Info Panel -->
+    <aside class="info-panel">
+      <h2>Region Info</h2>
+      <p>Select a biome.</p>
+
+      <button id="teleportBtn">Teleport</button>
+    </aside>
+
+  </div>
+
+  <!-- Modal Popup -->
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2>World Map</h2>
+      <p>This will eventually show a full fantasy world map.</p>
+    </div>
+  </div>
+
+ <canvas id="particles"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
